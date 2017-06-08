@@ -24,7 +24,7 @@
   //$db = parse_url($_ENV["DATABASE_URL"]);
 //else
   //$db = parse_url($_SERVER["DATABASE_URL"]);
-$db = "postgres://ucoxdqzpmslirb:980e3b5879c9add1071b30c6d5383886a4461f325ffa64b48b176e7fc6184a64@ec2-54-225-68-71.compute-1.amazonaws.com:5432/dbq3doa1qiapic"
+$db = parse_url("postgres://ucoxdqzpmslirb:980e3b5879c9add1071b30c6d5383886a4461f325ffa64b48b176e7fc6184a64@ec2-54-225-68-71.compute-1.amazonaws.com:5432/dbq3doa1qiapic");
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
