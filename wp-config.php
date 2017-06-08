@@ -16,11 +16,11 @@
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
 //$db = parse_url($_ENV["DATABASE_URL"]);
-//if (isset($_ENV["CLEARDB_DATABASE_URL"]))
-//  $db = parse_url($_ENV["CLEARDB_DATABASE_URL"]);
-//else
-//$db = parse_url("mysql://wordpress:wordpress@localhost/wordpress");
-$db = parse_url("mysql://bf327fef841ae1:ec082b14@us-cdbr-iron-east-03.cleardb.net/heroku_f96f1763ec7ba1b?reconnect=true");
+if (isset($_ENV["CLEARDB_DATABASE_URL"]))
+  $db = parse_url($_ENV["CLEARDB_DATABASE_URL"]);
+else
+	$db = parse_url("mysql://bf327fef841ae1:ec082b14@us-cdbr-iron-east-03.cleardb.net/heroku_f96f1763ec7ba1b?reconnect=true");
+
 
 
 
