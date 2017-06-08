@@ -16,10 +16,10 @@
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
 //$db = parse_url($_ENV["DATABASE_URL"]);
-if (isset($_ENV["DATABASE_URL"]))
-  $db = parse_url($_ENV["DATABASE_URL"]);
+if (isset($_ENV["CLEARDB_DATABASE_URL"]))
+  $db = parse_url($_ENV["CLEARDB_DATABASE_URL"]);
 else
-  $db = parse_url($_SERVER["DATABASE_URL"]);
+  $db = parse_url($_SERVER["CLEARDB_DATABASE_URL"]);
 
 
 // ** MySQL settings - You can get this info from your web host ** //
