@@ -19,7 +19,7 @@
 if (isset($_ENV["CLEARDB_DATABASE_URL"]))
   $db = parse_url($_ENV["CLEARDB_DATABASE_URL"]);
 else
-  $db = parse_url($_SERVER["CLEARDB_DATABASE_URL"]);
+  $db = parse_url("mysql://wordpress:wordpress@localhost/wordpress");
 
 
 // ** MySQL settings - You can get this info from your web host ** //
