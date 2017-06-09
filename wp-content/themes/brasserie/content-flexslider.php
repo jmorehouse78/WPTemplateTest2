@@ -9,7 +9,7 @@
 				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 				<li>
 					<?php the_post_thumbnail(); ?>
-					<div class="caption_wrap">
+					<!--<div class="caption_wrap">
 						<div class="flex-caption">
 							<div class="flex-caption-title"><h3>
 								<a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
@@ -17,7 +17,7 @@
 								<p><?php echo brasserie_get_slider_excerpt(); ?><a href="<?php the_permalink() ?>">...</a></p>
 								<div class="flex-more-link"><a href="<?php the_permalink() ?>"><?php echo __('Read More', 'brasserie'); ?></a></div>
 						</div>
-					</div>
+					</div>-->
 				</li>
 				<?php
 				endwhile;
